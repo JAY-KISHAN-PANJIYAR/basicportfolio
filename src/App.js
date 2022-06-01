@@ -15,7 +15,7 @@ function App() {
     <VStack p={5}>
       <Flex w="100%">
         <Heading
-          ml="8" size="md" fontWeight='semibold' color="cyan.400">imthepk</Heading>
+          ml="8" size="md" fontWeight='semibold' color="cyan.400">Jay</Heading>
 
         <Spacer></Spacer>
         <IconButton icon={<FaLinkedin />} isRound='true' onClick={toggleColorMode}></IconButton>

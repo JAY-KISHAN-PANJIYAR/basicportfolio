@@ -3,6 +3,8 @@ import { useColorMode } from '@chakra-ui/color-mode'
 import { Image } from '@chakra-ui/image';
 import { Stack, Circle, Flex, Box, Text } from '@chakra-ui/layout';
 import { useMediaQuery } from '@chakra-ui/media-query';
+import companyLogo from './jay.jpg';
+
 import React from 'react'
 
 function Header() {
@@ -21,18 +23,18 @@ function Header() {
                 alignSelf="flex-start">
                 <Box mt={isNotSmallerScreen ? "0" : 16} align='flex-start'>
                     <Text fontSize="5xl" fontWeight="semibold">Hi, I am</Text>
-                    <Text fontSize="7xl" fontWeight="bold" bgGradient="linear(to-r, cyan.400, blue.500, purple.600)" bgClip='text' >Pawan Kumar</Text>
-                    <Text color={isDark ? "gray.200" : "gray.500"}>GDE - Flutter, Firebase. Founder of https://codepur.dev & https://velocityx.dev.
-              Building @frontierdotxyz, YouTuber & Entrepreneur 🗣</Text>
+                    <Text fontSize="7xl" fontWeight="bold" bgGradient="linear(to-r, cyan.400, blue.500, purple.600)" bgClip='text' >Jay Kishan Panjiyar</Text>
+                    <Text color={isDark ? "gray.200" : "gray.500"}>Regional Associate at Hult Prize Foundation
+              Co-Founder and CEO at NxtGen 🗣</Text>
                     <Button mt={8} colorScheme="blue" onClick={() =>
-                        window.open("https://pawan.live")
-                    }>Hire Me</Button>
+                        window.open("https://www.linkedin.com/in/jay-kishan-panjiyar/")
+                    }>Connect with Me </Button>
 
                 </Box>
                 <Image alignSelf="center" mt={isNotSmallerScreen ? "0" : "12"}
                     mb={isNotSmallerScreen ? "0" : "12"} borderRadius='full'
                     backgroundColor="transparent" boxShadow="lg"
-                    boxSize="300px" src='https://avatars.githubusercontent.com/u/12619420?v=4' />
+                    boxSize="300px" src={companyLogo} alt='jay.jpg'/>
             </Flex>
 
         </Stack>
